@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💀Tremento troyano te comiste💀</title>
+    <style>
+        .body {
+            background-color: darksalmon;
+            text-align: center;
+        }
+       
+        .body__title {
+            color: beige;
+        }
+
+        .body__img {
+            width: 40%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="body">
+   <h1 class="body__title">❤️Te Odio❤️</h1>
+   <div>
+    <img 
+    src="https://i.pinimg.com/736x/de/67/da/de67da5d09e7a6ddc24da12ef3807442.jpg" 
+    alt="Representacion mia" class="body__img" />
+   </div> 
+   <button id="yes">✨Si✨</button>
+   <button id="no">💔NO💔</button>
+
+   <script >
+       const BotonSi = document.getElementById('yes');
+       const BotonNo = document.getElementById('no');
+
+       const ahoraeres = () => {
+           alert('💞Ahora tu alma me pertenece💞');
+           alert('💀El contrato te llegara en la tarde💀');
+           location.href = 'https://youtu.be/7i7YsNo_J7U';
+       }
+
+       const nolevasadar = () => {
+           BotonNo.style.position = 'absolute';
+           BotonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+           BotonNo.style.left = (Math.random() * window.innerHeight) + 'px';
+       }
+
+       BotonSi.addEventListener('click', ahoraeres);
+       BotonNo.addEventListener('mouseover', nolevasadar);
+   </script>
+</body>
+
+</html>
